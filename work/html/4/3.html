@@ -1,0 +1,88 @@
+<!-- 실습
+  직원정보를 자바스크립를 사용하여 출력합니다.
+직원정보 객체의 구조는 다음과 같습니다.
+class Emp {
+lit empno;
+String job;
+String ename; // 프로그래머~
+double height; // 180.5 ~
+}
+1. html
+2.css
+3. js
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript">
+    var users = [{
+        empno: 10,
+        job: "Programmer",
+        ename: "호랑이",
+        height: 180.5
+      },
+      {
+        empno: 11,
+        job: "Designer",
+        ename: "곰",
+        height: 185.7
+      },
+      {
+        empno: 12,
+        job: "Programmer",
+        ename: "토끼",
+        height: 150
+      },
+
+      {
+        empno: 13,
+        job: "Designer",
+        ename: "고양이",
+        height: 175
+      },
+    ];
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Users List</h1>
+    <table class="table teble-striped">
+      <thead>
+        <tr>
+          <th>empno</th>
+          <th>job</th>
+          <th>ename</th>
+          <th>height</th>
+        </tr>
+      </thead>
+      <tbody id="target">
+      </tdody>
+    </table>
+  </div>
+
+  <script type="text/javascript">
+    var elem = document.getElementById("target");
+    console.log(elem);
+
+    var html = "";
+    for (user of users) {
+      html += "<tr>";
+      html += "<td>" + user.empno + "</td>";
+      html += "<td>" + user.job + "</td>";
+      html += "<td>" + user.ename + "</td>";
+      html += "<td>" + user.height + "</td>";
+      html += "</tr>";
+    }
+    elem.innerHTML = html;
+  </script>
+</body>
+
+</html>

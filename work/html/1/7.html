@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var people = [
+        {id: 1, name: 'dddfa', job:"ddddd", age:"23" },
+        {id: 2, name: 'hjrgh', job:"ddddd", age:"35" },
+        {id: 3, name: 'dfsxc', job:"ddddd", age:"27" },
+        {id: 4, name: 'ggfg', job:"ddddd", age:"56" },
+        {id: 5, name: 'rerty', job:"ddddd", age:"43" },
+      ];
+      window.onload = function () {
+        document.getElementById ('target');
+        //var target = document.getElementById('target');
+        // target.innerHTML = target.innerHTML + myNewStuff();
+        // for (var i = 0; i < people.length; i++) {
+        //   people[i]
+        // }
+        // var tr = document.createElement('tr');
+        // var td = document.createElement('td');
+        //
+        // var id = document.createElement('td');
+        //     id.appendChild(p.id);
+        // var name = document.createElement('td');
+        //     name.appendChild(p.name);
+        // var job = document.createElement('td');
+        //     job.appendChild(p.job);
+        // var age = document.createElement('td');
+        //     age.appendChild(p.age);
+        //
+        // target.appendChild(id);
+        // target.appendChild(name);
+        // target.appendChild(job);
+        // target.appendChild(age);
+
+        tr.innerHTML = "<td></td>";
+        target.appendChild(tr);
+
+      };
+    </script>
+    <style media="screen">
+      table{width: 100%; border-collapse: collapse;}
+      th,td {border: 1px solid black;}
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <h3>직원 명단</h3>
+    <h5></h5>
+    <table id="target">
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>job</th>
+        <th>age</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  </body>
+</html>

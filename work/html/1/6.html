@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div id="container" style="width:500px">
+
+    <div id="header" style="background-color:#FFA500;">
+      <h1 style="margin-bottom:0;">Main Title of Web Page</h1>
+    </div>
+
+    <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+      <b>Menu</b><br>
+HTML<br>
+CSS<br>
+JavaScript</div>
+
+    <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+      Content goes here</div>
+
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+      Copyright © W3Schools.com</div>
+
+  </div>
+
+  <br><br><br><br>
+
+  <form action="서버 URL 주소" method="post">
+    First name: <input type="text" name="firstname"><br>
+    Last name: <input type="text" name="lastname"><br>
+    password: <input type="password" name="password"><br>
+
+    <input type="radio" name="sex" value="male">Male<br>
+    <input type="radio" name="sex" value="female">Female<br>
+    <!-- 체크박스의 선택값은 배열로 선언된다  -->
+    <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+    <input type="checkbox" name="vehicle" value="Car">I have a car<br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <br><br><br><br>
+  <iframe src="demo_iframe.html" width="200" height="200"></iframe>
+
+  <p>Some older browsers don't support iframes.</p>
+  <p>If they don't, the iframe will not be visible.</p>
+
+  <br><br>
+  <iframe src="demo_iframe.html" name="iframe_a"></iframe>
+  <iframe src="demo_iframe2.html" name="iframe_b"></iframe>
+  <p>
+    <a href="demo_iframe.html" target="iframe_a">W3Schools.com</a>
+    <a href="demo_iframe2.html" target="iframe_b">W3Schools101.com</a>
+  </p>
+
+</body>
+
+</html>

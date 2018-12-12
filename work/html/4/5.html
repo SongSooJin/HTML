@@ -1,0 +1,60 @@
+<!--[input숫자 입력 #1] [input숫자입력 #2] [button버튼계산하기]
+하단에 표시 :
+a + b = ?
+a * b = ?
+a - b = ?
+a / b = ? -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+        <style media="screen">
+          body{ margin-top: 30px;}
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td><input type="text" name="a" id="a" value="" size="3"></td>
+          <td><input type="text" name="b" id="b" value="" size="3"></td>
+          <td><button type="button" onclick="calc()">계산</td>
+        </tr>
+        <td colspan="3">
+          <ul>
+            <li id="target1"></li>
+            <li id="target2"></li>
+            <li id="target3"></li>
+            <li id="target4"></li>
+          </ul>
+        </td>
+      </table>
+    </div>
+    <script type="text/javascript">
+      function calc() {
+        var elem1 = document.getElementById('a');
+        var elem2 = document.getElementById('b');
+        var a = elem1.value;
+        var b = elem2.value;
+        console.log(typeof a+""+ typeof b);
+        a = parseInt(a,10);// 문자열을 10진수 정수로 변경
+        b = parseInt(b,10);
+        console.log(typeof a, typeof b);
+
+        var result1 =  a + "+" + b + "=" + (a+b);
+        var result2 =  a + "-" + b + "=" + (a-b);
+        var result3 =  a + "*" + b + "=" + (a*b);
+        var result4 =  a + "/" + b + "=" + (a/b);
+
+        document.getElementById('target1').innerHTML = result1;
+        document.getElementById('target2').innerHTML = result2;
+        document.getElementById('target3').innerHTML = result3;
+        document.getElementById('target4').innerHTML = result4;
+      }
+    </script>
+  </body>
+</html>

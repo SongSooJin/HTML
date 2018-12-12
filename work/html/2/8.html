@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    p.pos_fixed {
+      background: blue;
+      position: fixed;
+      /* 컨트롤바를 움직여도 그자리에 고정  */
+      top: 30px;
+      right: 5px;
+      color: red;
+    }
+
+    h2.pos_left {
+      position: relative;
+      left: -20px;
+      background: pink;
+    }
+
+    h2.pos_right {
+      position: relative;
+      left: 20px;
+      background: red;
+    }
+
+    .x {
+      overflow: auto;
+      /* overflow: auto // "벗어나면" 스크롤바를 만들어줘 */
+      /* overflow: hidden; // 벗어나면 안보이게 해줘 */
+      border: 1px solid black;
+    }
+
+    img {
+      float: left;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    <b>Note:</b>
+    IE7 and IE8 supports the fixed value only if a !DOCTYPE is specified.
+  </p>
+
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p class="pos_fixed">Some positioned text.</p>
+  <hr>
+  <br><br><br>
+  <h2>Heading with no position</h2>
+  <h2 class="pos_left">This heading is moved left according to its normal position</h2>
+  <h2 class="pos_right">This heading is moved right according to its normal position</h2>
+  <p>Relative positioning moves an element RELATIVE to its original position.</p>
+
+
+  <div class="x">
+    <p><img src="../../img/앙골라.jpg">dkssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+    kssudkdkkgptdywjsjdmksadjkajsdkjkfjkjkjwkjkdjfkjkjeekjksljdkjkfjkjeijidjkjdjfkjdkjksjkjfkdjkj
+
+  </p>
+
+  </div>
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Sep 2014 06:59:44 GMT -->
+
+</html>

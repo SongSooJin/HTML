@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>구구단</h3>
+    <form class="">
+      <label for="">From</label>
+      <input type="number" id="a" min="1" max="20">
+      &nbsp;~&nbsp;
+      <label for=""> ~ TO</label>
+      <input type="number" id="b" min="1" max="20">
+      <button type="button" name="button" onclick="show()">Show</button>
+      &nbsp;
+    </form>
+    <table class="table table-striped">
+      <thead id="target1">
+      </thead>
+      <tbody id="target">
+        <!-- <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript">
+    // var tds ;
+    // var trs = [];
+    // for (var i = 1; i < 10; i++) { // 헹
+    //      tds = [];
+    //   for (var j = 1; j <= 9; j++) { // 열
+    //   //   console.log(i + "*" + j + "=" + (i * j));
+    //   tds.push("<td>"+ j + "*" + i + "=" + (i * j)+ "</td>");
+    //   }
+    //   trs.push("<tr>"+tds.join("")+"</tr>");
+    // }
+    //   console.log(trs);
+    //
+    //   var tbody =  document.getElementById('target');
+    //   tbody.innerHTML = trs.join("");
+
+    function show() {
+      var elem1 = document.getElementById('a');
+      var elem2 = document.getElementById('b');
+      var a = elem1.value;
+      var b = elem2.value;
+      a = parseInt(a, 10); // 문자열을 10진수 정수로 변경
+      b = parseInt(b, 10);
+
+      var ths = [];
+      for (var i = a; i <= b; i++) {
+        ths.push("<th>" + i + "</th>");
+      }
+      var thead = document.getElementById('target1');
+      thead.innerHTML = ("<tr>"+ths.join("")+"</tr>");
+
+      var tds;
+      var trs = [];
+      for (var i = 1; i <= b; i++) { // 헹
+        tds = [];
+        for (var j = a; j <= b; j++) { // 열
+          //   console.log(i + "*" + j + "=" + (i * j));
+          tds.push("<td>" + j + "*" + i + "=" + (i * j) + "</td>");
+        }
+        trs.push("<tr>" + tds.join("") + "</tr>");
+      }
+      console.log(trs);
+
+      var tbody = document.getElementById('target');
+      tbody.innerHTML = trs.join("");
+
+
+
+
+
+      //  var tds ;
+      //  var  trs= [];
+      //  for (var i = 1; i <=a; i++) {
+      //    tds = [];
+      //    for (var j = 1; j <= b j++) {
+      //      console.log(i + "*" + j + "=" + (i * j));
+      //       tds.push("<td>"+ j + "*" + i + "=" + (i * j)+ "</td>");
+      //     }
+      //  trs.push("<tr>"+tds.join("")+"</tr>");
+      //  }
+      //  document.getElementById('target').innerHTML =  trs;
+      // // var tbody =  document.getElementById('target');
+      // // tbody.innerHTML = trs.join("");
+    }
+  </script>
+</body>
+
+</html>

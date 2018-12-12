@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    p:first-child {
+      background-color: blue;
+    }
+    p:nth-child(2) {
+    background: blue;
+}
+
+p:first-of-type {
+  background: red;
+}
+    p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+p::first-line {
+    background-color: pink;
+}
+input:focus {
+    background-color: yellow;
+}
+input:invalid {
+    border: 2px solid red;
+}
+p:lang(it) {
+    background: yellow;
+}
+p:lang(kr) {
+    background: green;
+}
+  </style>
+</head>
+
+<body>
+  <p>The first paragraph.</p>
+  <p>The second paragraph.</p>
+  <p>The third paragraph.</p>
+  <p>The fourth paragraph.</p>
+
+  <div>
+    <p>The first paragraph.</p>
+    <p>The second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>The fourth paragraph.</p>
+  </div>
+  <div>
+    <h1>Hi</h1>
+    <p>The first paragraph.</p>
+    <p>The second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>The fourth paragraph.</p>
+  </div>
+  <p>The first paragraph.The first paragraph.The first paragraph.
+    The first paragraph.The first paragraph.The first paragraph.
+    The first paragraph.The first paragraph.The first paragraph.
+    The first paragraph.The first paragraph.The first paragraph.
+    The first paragraph.The first paragraph.The first paragraph.
+    The first paragraph.The first paragraph.The first paragraph.
+    The first paragraph.The first paragraph.The first paragraph.
+  </p>
+  <form>
+    First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+
+</form>
+
+  <p><b>Note:</b> For :focus to work in IE8, a DOCTYPE must be declared.</p>
+
+  <p>I live in Italy.</p>
+<p lang="it">Ciao bella!</p>
+<p lang="kr">요요</p>
+
+</body>
+
+</html>
