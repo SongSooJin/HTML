@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+    color: #333333;
+}
+
+body {
+    width: 1200px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+header {
+    width: 200px;
+    height: 650px;
+    position: relative;
+    float: left;
+}
+
+.top {
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: #ddd;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 50px;
+}
+
+.logo img {
+    width: 200px;
+    height: 50px;
+}
+
+.menu {
+    width: 200px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+.navi>li {
+    width: 200px;
+    background-color: darkslategray;
+}
+
+.navi>li>a {
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.navi>li>a:hover {
+    background-color: darkseagreen;
+    color: black;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    left: 200px;
+    top: 0;
+}
+
+.submenu>li {
+    width: 200px;
+    background-color: #fff;
+}
+
+.submenu>li>a {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.submenu>li>a:hover {
+    background-color: darkseagreen;
+    color: black;
+}
+
+.bodywrap {
+    float: right;
+    width: 1000px;
+    height: 650px;
+    position: relative;
+}
+
+.slide {
+    float: right;
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 350px;
+}
+
+.slide>a {
+    position: absolute;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 1000px;
+    height: 350px;
+}
+
+.stext {
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(60,60,60,0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    margin: -30px 0 0 -250px;
+    top: 50%;
+    left: 50%;
+}
+
+.contents {
+    float: left;
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+
+.notice {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.tab {
+    float: left;
+    margin-top: 5px;
+}
+
+.tab h4 {
+    float: left;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: darkslategrey;
+    color: #fff;
+}
+
+.notice li {
+    float: left;
+    width: 360px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.notice>div {
+    width: 380px;
+    border-bottom-color: darkslategrey;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.notice li span {
+    float: right;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#modal.active {
+    display:block;
+}
+
+.modal_up {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+}
+
+.uptitle {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.upbody {
+    padding: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    background-color: darkslategray;
+    color: #fff;
+    position: absolute;
+    display: block;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+
+
+
+

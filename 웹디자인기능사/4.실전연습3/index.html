@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대한천문대</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js" defer type="text/javascript"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="로고">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li><a href="#">천문대소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">천문대 소식</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">이용안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">관람 시간표</a></li>
+                            <li><a href="#">이달의 별자리</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">천문대예약</a>
+                        <ul class="submenu">
+                            <li><a href="#">관람예약</a></li>
+                            <li><a href="#">방문후기</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">방문후기</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="bodywrap">   
+        <div class="slide">
+           <a href="#">
+           <img src="img/simg1.jpg" alt="이미지1"><span class="stext">대한천문대 홈페이지 새단장</span>
+           </a>
+           <a href="#">
+           <img src="img/simg2.jpg" alt="이미지2"><span class="stext">이달의 별자리 특강</span>
+           </a>
+           <a href="#">
+           <img src="img/simg3.jpg" alt="이미지3"><span class="stext">별사진 공모전 개최</span>
+           </a>
+        </div>
+
+        <div class="contents">
+<!--            ul.tabmenu>li>div.-->
+            <ul class="tabmenu">
+                <li class="active"><a href="#">공지사항</a>
+                    <div class="notice">
+<!--                        ul>li*4>(span)a-->
+                        <ul>
+                            <li><a href="#">제1회 별사진 공모전<span>2020.03.14</span></a></li>
+                            <li><a href="#">하계기간 야간 운영<span>2020.03.15</span></a></li>
+                            <li><a href="#">청소년 대상 천문교실<span>2020.03.16</span></a></li>
+                            <li><a href="#">하늘과 별과 바람<span>2020.03.17</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">갤러리</a>
+                     <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="img/cing1.jpg" alt="갤러리1"></a></li>
+                            <li><a href="#"><img src="img/cing2.jpg" alt="갤러리2"></a></li>
+                            <li><a href="#"><img src="img/cing3.jpg" alt="갤러리3"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="otherwrap">
+                <div class="banner">
+                    <img src="img/banner.jpg" alt="배너">
+                    <h4 class="btext">배너</h4>
+                </div>
+                <div class="click">
+                    <img src="img/content.jpg" alt="바로가기">
+                    <h4 class="ctext">바로가기</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<!--   div#modal>div.modal_up(div.uptitle)(div.upbody)(div.btn)-->
+   <div id="modal">
+       <div class="modal_up">
+           <div class="uptitle">하늘과 바람과 별</div>
+           <div class="upbody">-contents폴더에 제공된 텍스트 입력</div>
+           <div class="btn">닫기</div>
+       </div>
+   </div>
+   
+    <footer>
+        <div class="copyright">
+            <div class="btlogo">
+                <a href="#"><img src="img/btlogo.png" alt="하단로고"></a>
+            </div>
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#">하단메뉴1</a></li>
+                    <li><a href="#">하단메뉴2</a></li>
+                    <li><a href="#">하단메뉴3</a></li>
+                    <li><a href="#">하단메뉴4</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                COPYRIGHT @BY SOOJIN COMPANY
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

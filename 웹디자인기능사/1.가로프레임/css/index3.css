@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "나눔고딕";
+    width: 1200px;
+    
+    
+}
+
+.head {
+    margin-top: 100px;
+    height: 50px;
+    background:blue;
+}
+
+.logo {
+    float: left;
+    width: 250px;
+    height: 50px;
+    background: red;
+}
+
+.nav {
+    float: right;
+    width: 950px;
+    height: 50px;
+    background: navy;
+}
+
+.slide {
+    height: 400px;
+    background: pink;
+}
+
+.contents {
+    height: 400px;
+    background: orange;
+}
+
+.c_box li {
+    float: left;
+    width: 400px;
+    height: 50px;
+    background: black;
+}
+
+
+.copyright {
+    height: 100px;
+    background: green;
+}
+
+.f_box {
+    float: right;
+    width: 1000px;
+    height: 50px;
+    background: white;
+    margin-top: 25px;
+}
+

@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "나눔고딕";
+}
+
+#popup{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,0.6);
+}
+
+.body{
+	position:fixed;
+	width:600px;
+	height:400px;
+	left:50%;
+	margin-left:-300px;
+	background:white;
+	border:5px solid #009688;
+	z-index:100;	
+	top:200px;
+}
+.box{
+	width:100%;
+	height:80%;
+	text-align:center;	
+}
+.box > h1{
+	font-size:40px;
+	font-family:"맑은 고딕";
+	font-weight:bold;
+	color:#009688;
+	padding-top:30px;
+}
+.box > li{
+	font-size:25px;
+	font-family:"맑은 고딕";
+	font-weight:bold;
+	color:#888888;
+}
+.box > p{
+	width:100%;
+	height:30px;
+}
+.close{
+	width:100%;
+	text-align:center;
+}
+.close > button{
+	width:150px;
+	height:35px;
+	text-align:center;
+}
+#popup.active{
+    z-index: 1;
+	display:block;
+	opacity:1;
+}
+
+.banner_box img{
+	cursor:pointer;
+}
+
+#main {
+    margin: 0 auto;
+    width: 1200px;
+    height: 900px;
+    border: 1px solid black;
+}
+
+.left_box {
+    float: left;
+    width: 250px;
+    height: 100%;
+    background: #000f4b;
+}
+
+.left_box h1 {
+    height: 80px;
+    background: #0000db;
+}
+
+.nav {
+	width:100%;
+	margin:0 auto;
+}
+.nav  ul   li{
+	width:100%;
+	text-align:center;
+}
+.nav  ul  li  a{
+	display:block;
+	line-height:60px;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	transition:all 1s;
+}
+.nav  ul  li  a:hover {
+	text-decoration:underline;
+	background:#009688;
+	transition:all 1s;
+	color:black;
+}
+.menu_box{
+	display:block;
+	width:250px;
+	background:#93fff5;
+	display:none;
+}
+.menu_box  li  a{
+	display:block;
+	font-size:15px;
+	color:black;
+	background:#93fff5;
+	line-height:40px;
+	transition:all 1s;
+}
+.menu_box  li  a:hover{
+	background:#76bab4;
+	font-weight:bold;
+	transition:all 1s;
+	color:white;
+}
+
+.right_box {
+    float: right;
+    width: 950px;
+    height: 100%;
+    background: #434343;
+}
+
+.slide {
+    width: 950px;
+    height: 500px;
+    background: pink;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+/*    transition: 1s;*/
+     /* 슬라이드의 페이드인아웃을 적용할때에는 transition: 1s 속성을 빼준다. */
+}
+
+
+.contents {
+    width: 950px;
+    height: 300px;
+    background: #676666;
+}
+
+
+.notice {
+    width: 500px;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    background: #ff869b;
+}
+
+/*
+.title {
+    float: left;
+    line-height: 20px;
+}
+
+.date {
+    float: right;
+    line-height: 20px;
+}
+
+.gallery {
+    float: left;
+    width: 350px;
+    height: 100%;
+}
+.gallery ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.gallery ul li img {
+    width: 95px;
+    height: 95px;
+}
+
+.gallery ul li img:hover {
+    opacity: 0.5;
+}
+*/
+
+.tab_menu {
+	position:relative;
+	width:100%;
+}
+
+.tab_menu li a{
+    top: 10px;
+	position:absolute;
+	color:#000000;
+	font-weight:bold;
+	font-size:14px;
+}
+.tab_menu  li + li  a{
+	left:100px;
+}
+
+li.on  .cont {
+	width:100%;
+	height:160px;
+	margin-top:35px;
+	background:#ffc8c8;
+}
+
+.cont {
+	position:absolute;
+	overflow:hidden;
+	height:0;
+}
+
+.footer {
+    height: 100px;
+    background: #989898;
+}
+
+.down_logo {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background: #001210;
+}
+
+.copyright {
+    width: 600px;
+    height: 100px;
+    float: left;
+    background: #1c3835;
+    text-align: center;
+}
+
+.down_menu {
+    width: 100%;
+    height: 50px;
+    background: #030045;
+}
+
+.down_menu ul {
+    display: inline;
+    font-size: 0;
+}
+
+.down_menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 15px;
+    transition: all 1s;
+}
+
+.down_menu ul li a:hover {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background: #00463f;
+    transition: all 1s;
+}
+
+.down_menu ul li {
+    display: inline-block;
+    width: 150px;
+    line-height: 50px;
+}
+
+.copy {
+    height: 50px;
+    background: #003b55;
+    line-height: 50px;
+    color: white;
+}
+
+.family {
+    float: left;
+    width: 150px;
+    height: 50px;    
+}
+
+select {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+
+.sns {
+    float: left;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.sns img {
+    width: 45px;
+    height: 45px;
+}
+
+
+.sns ul {
+    display: inline;
+    font-size: 0;
+}
+
+.sns ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 15px
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연꽃마을축제</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js" defer type="text/javascript"></script>
+</head>
+<body>
+   
+   <header>
+       <div class="top">
+           <div class="logo">
+               <img src="img/logo.png" alt="로고">
+           </div>
+           
+           <nav class="menu">
+             <!--  ul.navi>li(a)*3>ul.submenu>li*3>a -->
+               <ul class="navi">
+                   <li>
+                       <a href="#">이용안내</a>
+                       <ul class="submenu">
+                           <li><a href="#">이용방법</a></li>
+                           <li><a href="#">이용시간</a></li>
+                           <li><a href="#">이용요금</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">이벤트정보</a>
+                       <ul class="submenu">
+                           <li><a href="#">현장이벤트</a></li>
+                           <li><a href="#">온라인이벤트</a></li>
+                           <li><a href="#">이벤트예약</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">프로그램안내</a>
+                       <ul class="submenu">
+                           <li><a href="#">온라인예약</a></li>
+                           <li><a href="#">단체예약</a></li>
+                           <li><a href="#">사전 시간표</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">고객센터</a>
+                       <ul class="submenu">
+                           <li><a href="#">공지사항</a></li>
+                           <li><a href="#">Q/A</a></li>
+                           <li><a href="#">자료실</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+   
+   <div class="bodywrap">
+       <div class="slide">
+           <a href="#">
+               <img src="img/cing1.jpg" alt="이미지1"><span class="stext">빛축제</span>
+           </a>
+           <a href="#">
+               <img src="img/cing2.jpg" alt="이미지2"><span class="stext">야경과축제</span>
+           </a>
+           <a href="#">
+               <img src="img/cing3.jpg" alt="이미지3"><span class="stext">축제사진</span>
+           </a>
+       </div>
+       
+       <div class="contents">
+           <ul class="tabmenu">
+               <li class="active">
+                <a href="#">공지사항</a>
+                   <div class="notice">
+<!--                       ul>li(a>span)*3-->
+                       <ul>
+                           <li><a href="#">해변에서 펼쳐지는..<span>2020.03.14</span></a></li>
+                           <li><a href="#">바다의 야경과 빛공연..<span>2020.03.15</span></a></li>
+                           <li><a href="#">빛축제 단체관람 안내..<span>2020.03.15</span></a></li>
+                       </ul>
+                   </div>
+               </li> 
+               <li>
+                  <a href="#">갤러리</a>  
+                   <div class="gallery">
+                       <ul>
+                           <li><a href="#"><img src="img/simg1.jpg" alt="갤러리1"></a></li>
+                           <li><a href="#"><img src="img/simg2.jpg" alt="갤러리2"></a></li>
+                           <li><a href="#"><img src="img/simg3.jpg" alt="갤러리3"></a></li>
+                       </ul>
+                   </div>
+               </li> 
+           </ul>
+           
+           <div class="otherwrap">
+               <div class="banner">
+                   <a href="#"><img src="img/banner.jpg" alt="배너">
+                       <h4 class="btext">배너</h4>
+                   </a>
+               </div>
+               <div class="click">
+                   <a href="#"><img src="img/content.jpg" alt="배너">
+                       <h4 class="ctext">바로가기</h4>
+                   </a>
+               </div>
+           </div>           
+       </div>       
+   </div>
+   
+<!--   div#modal>div.modal_up(div.uptitle)(div.upbody)(div.btn)-->
+   <div id="modal">
+       <div class="modal_up">
+           <div class="uptitle">빛축제 공연 정보</div>
+           <div class="upbody">Contents 폴더에 제공된 텍스트 입력</div>
+           <div class="btn">닫기</div>
+       </div>
+   </div>
+   
+   
+   <footer> 
+       <div class="copyright">
+           <div class="btlogo">
+               <a href="#"><img src="img/btlogo.png" alt="하단로고"></a>
+           </div>
+          
+           <div class="site">
+               <div class="btmenu">
+                   <ul>
+                       <li><a href="#">하단메뉴1</a></li>
+                       <li><a href="#">하단메뉴2</a></li>
+                       <li><a href="#">하단메뉴3</a></li>
+                   </ul>
+               </div>
+               
+               <div class="copy">
+                   COPYRIGHT @ by SOOJIN COMPANY
+               </div>
+           </div>       
+       </div>
+   </footer>
+    
+</body>
+</html>
